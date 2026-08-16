@@ -1,0 +1,80 @@
+{
+    "intents": [
+        {
+            "tag": "go_table_1",
+            "patterns": ["go to table 1", "go to table one", "move to table 1", "navigate to table 1", "head to table 1", "reach table 1", "deliver to table 1", "visit table 1", "take me to table 1", "table 1"],
+            "responses": ["tableone"]
+        },
+        {
+            "tag": "go_table_2",
+            "patterns": ["go to table 2", "go to table two", "move to table 2", "navigate to table 2", "head to table 2", "reach table 2", "deliver to table 2", "visit table 2", "take me to table 2", "table 2"],
+            "responses": ["tabletwo"]
+        },
+        {
+            "tag": "go_table_3",
+            "patterns": ["go to table 3", "go to table three", "move to table 3", "navigate to table 3", "head to table 3", "reach table 3", "deliver to table 3", "visit table 3", "take me to table 3", "table 3"],
+            "responses": ["tablethree"]
+        },
+        {
+            "tag": "go_table_4",
+            "patterns": ["go to table 4", "go to table four", "move to table 4", "navigate to table 4", "head to table 4", "reach table 4", "deliver to table 4", "visit table 4", "take me to table 4", "table 4"],
+            "responses": ["tablefour"]
+        },
+        {
+            "tag": "go_table_5",
+            "patterns": ["go to table 5", "go to table five", "move to table 5", "navigate to table 5", "head to table 5", "reach table 5", "deliver to table 5", "visit table 5", "take me to table 5", "table 5"],
+            "responses": ["tablefive"]
+        },
+        {
+            "tag": "go_table_6",
+            "patterns": ["go to table 6", "go to table six", "move to table 6", "navigate to table 6", "head to table 6", "reach table 6", "deliver to table 6", "visit table 6", "take me to table 6", "table 6"],
+            "responses": ["tablesix"]
+        },
+        {
+            "tag": "go_table_7",
+            "patterns": ["go to table 7", "go to table seven", "move to table 7", "navigate to table 7", "head to table 7", "reach table 7", "deliver to table 7", "visit table 7", "take me to table 7", "table 7"],
+            "responses": ["tableseven"]
+        },
+        {
+            "tag": "go_table_8",
+            "patterns": ["go to table 8", "go to table eight", "move to table 8", "navigate to table 8", "head to table 8", "reach table 8", "deliver to table 8", "visit table 8", "take me to table 8", "table 8"],
+            "responses": ["tableeight"]
+        },
+        {
+            "tag": "go_table_9",
+            "patterns": ["go to table 9", "go to table nine", "move to table 9", "navigate to table 9", "head to table 9", "reach table 9", "deliver to table 9", "visit table 9", "take me to table 9", "table 9"],
+            "responses": ["tablenine"]
+        },
+        {
+            "tag": "go_table_10",
+            "patterns": ["go to table 10", "go to table ten", "move to table 10", "navigate to table 10", "head to table 10", "reach table 10", "deliver to table 10", "visit table 10", "take me to table 10", "table 10"],
+            "responses": ["tableten"]
+        },
+        {
+            "tag": "go_table_11",
+            "patterns": ["go to table 11", "go to table eleven", "move to table 11", "navigate to table 11", "head to table 11", "reach table 11", "deliver to table 11", "visit table 11", "take me to table 11", "table 11"],
+            "responses": ["tableeleven"]
+        },
+        {
+            "tag": "go_table_12",
+            "patterns": ["go to table 12", "go to table twelve", "move to table 12", "navigate to table 12", "head to table 12", "reach table 12", "deliver to table 12", "visit table 12", "take me to table 12", "table 12"],
+            "responses": ["tabletweleve"]
+        },
+        {
+            "tag": "go_kitchen",
+            "patterns": [
+                "go to kitchen",
+                "move to kitchen",
+                "navigate to kitchen",
+                "return to kitchen",
+                "go back to kitchen",
+                "head to kitchen",
+                "reach kitchen",
+                "visit kitchen",
+                "take me to kitchen",
+                "kitchen"
+            ],
+            "responses": ["kitchen"]
+        }
+    ]
+}

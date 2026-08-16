@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.6">
+
+<world name="restaurant_world">
+<plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"/>
+
+<!-- ================= FLOOR SECTION ================= -->
+
+<model name="restaurant_floor">
+     <pose>6 0 0 0 0 0</pose>
+    <static>true</static>
+
+    <link name="floor">
+
+        <collision name="collision">
+            <geometry>
+                <box>
+                    <size>35 25 0.05</size>
+                </box>
+            </geometry>
+        </collision>
+
+
+        <visual name="visual">
+            <geometry>
+                <box>
+                    <size>35 25 0.05</size>
+                </box>
+            </geometry>
+
+            <material>
+                <ambient>
+                    0.7 0.7 0.7 1
+                </ambient>
+            </material>
+
+        </visual>
+
+    </link>
+
+</model>
+
+<!-- ================= WALLS SECTION ================= -->
+<model name="restaurant_walls">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <!-- North wall -->
+    <link name="wall_north">
+        <pose>6 12.5 1 0 0 0</pose>
+        <collision name="collision">
+            <geometry><box><size>35 0.2 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+            <geometry><box><size>35 0.2 2</size></box></geometry>
+            <material>
+                <ambient>0.8 0.8 0.8 1</ambient>
+                <diffuse>0.8 0.8 0.8 1</diffuse>
+            </material>
+        </visual>
+    </link>
+
+    <!-- South wall -->
+    <link name="wall_south">
+        <pose>6 -12.5 1 0 0 0</pose>
+        <collision name="collision">
+            <geometry><box><size>35 0.2 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+            <geometry><box><size>35 0.2 2</size></box></geometry>
+            <material>
+                <ambient>0.8 0.8 0.8 1</ambient>
+                <diffuse>0.8 0.8 0.8 1</diffuse>
+            </material>
+        </visual>
+    </link>
+
+    <!-- East wall -->
+    <link name="wall_east">
+        <pose>23.5 0 1 0 0 1.5708</pose>
+        <collision name="collision">
+            <geometry><box><size>25 0.2 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+            <geometry><box><size>25 0.2 2</size></box></geometry>
+            <material>
+                <ambient>0.8 0.8 0.8 1</ambient>
+                <diffuse>0.8 0.8 0.8 1</diffuse>
+            </material>
+        </visual>
+    </link>
+
+    <!-- West wall -->
+    <link name="wall_west">
+        <pose>-11.5 0 1 0 0 1.5708</pose>
+        <collision name="collision">
+            <geometry><box><size>25 0.2 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+            <geometry><box><size>25 0.2 2</size></box></geometry>
+            <material>
+                <ambient>0.8 0.8 0.8 1</ambient>
+                <diffuse>0.8 0.8 0.8 1</diffuse>
+            </material>
+        </visual>
+    </link>
+</model>
+
+
+<!-- ================= KITCHEN SECTION ================= -->
+
+<include>
+
+<uri>model://kitchen</uri>
+
+<name>kitchen</name>
+
+<pose>
+0 0 0 0 0 0
+</pose>
+
+</include>
+
+
+
+<!-- ================= TABLES ================= -->
+
+
+<!-- ROW 1 -->
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_1</name>
+<pose>4 4 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_2</name>
+<pose>4 1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_3</name>
+<pose>4 -1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_4</name>
+<pose>4 -4 0 0 0 0</pose>
+</include>
+
+
+
+<!-- ROW 2 -->
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_5</name>
+<pose>8 4 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_6</name>
+<pose>8 1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_7</name>
+<pose>8 -1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_8</name>
+<pose>8 -4 0 0 0 0</pose>
+</include>
+
+
+
+<!-- ROW 3 -->
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_9</name>
+<pose>12 4 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_10</name>
+<pose>12 1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_11</name>
+<pose>12 -1.5 0 0 0 0</pose>
+</include>
+
+
+<include>
+<uri>model://restaurant_table</uri>
+<name>table_12</name>
+<pose>12 -4 0 0 0 0</pose>
+</include>
+
+
+
+<!-- ================= LIGHT ================= -->
+
+<include>
+<uri>model://sun</uri>
+</include>
+
+
+</world>
+
+</sdf>

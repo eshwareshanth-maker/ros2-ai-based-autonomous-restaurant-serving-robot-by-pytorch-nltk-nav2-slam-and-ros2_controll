@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ================= ros2_control part ================= -->
+  <gazebo>
+   <plugin name="gazebo_ros2_control"   filename="libgazebo_ros2_control.so">
+
+    <robot_param>robot_description</robot_param>
+
+    <robot_param_node>robot_state_publisher</robot_param_node>
+
+    <parameters>$(find restaurant_bot)/config/controllers.yaml</parameters>
+
+    <hold_joints>false</hold_joints>
+
+    <update_rate>50</update_rate>
+
+  </plugin>
+  </gazebo>
+
+  <!-- ================= LIDAR part ================= -->
+  <gazebo reference="lidar_link">
+    <sensor name="lidar_sensor" type="ray">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.12</min>
+          <max>10.0</max>
+          <resolution>0.015</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="lidar_plugin" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>lidar_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- ================= RGB CAMERA part ================= -->
+  <gazebo reference="camera_link">
+    <sensor name="camera_sensor" type="camera">
+      <update_rate>30</update_rate>
+      <camera>
+        <horizontal_fov>1.3962</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip><near>0.05</near><far>15</far></clip>
+      </camera>
+      <plugin name="camera_plugin" filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>camera</namespace>
+        </ros>
+        <frame_name>camera_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- ================= DEPTH CAMERA -> part ================= -->
+  <gazebo reference="depth_camera_link">
+    <sensor name="depth_camera_sensor" type="depth">
+      <update_rate>15</update_rate>
+      <camera>
+        <horizontal_fov>1.02</horizontal_fov>
+        <image>
+          <width>320</width>
+          <height>240</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip><near>0.1</near><far>8</far></clip>
+      </camera>
+      <plugin name="depth_camera_plugin" filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>depth_camera</namespace>
+        </ros>
+        <frame_name>depth_camera_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- ================= materials / friction and the other parts ================= -->
+  <gazebo reference="base_link"><material>Gazebo/Grey</material></gazebo>
+  <gazebo reference="left_wheel_link"><material>Gazebo/Black</material><mu1>1.0</mu1><mu2>1.0</mu2></gazebo>
+  <gazebo reference="right_wheel_link"><material>Gazebo/Black</material><mu1>1.0</mu1><mu2>1.0</mu2></gazebo>
+  <gazebo reference="front_caster_link"><material>Gazebo/Black</material><mu1>0.001</mu1><mu2>0.001</mu2></gazebo>
+  <gazebo reference="rear_caster_link"><material>Gazebo/Black</material><mu1>0.001</mu1><mu2>0.001</mu2></gazebo>
+  <gazebo reference="tray_1_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="tray_2_link"><material>Gazebo/White</material></gazebo>
+  <gazebo reference="tray_3_link"><material>Gazebo/White</material></gazebo>
+
+</robot>

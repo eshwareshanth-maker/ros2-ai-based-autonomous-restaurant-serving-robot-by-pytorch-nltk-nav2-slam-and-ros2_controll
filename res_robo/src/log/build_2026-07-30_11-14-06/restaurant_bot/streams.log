@@ -1,0 +1,67 @@
+[0.035s] Invoking command in '/home/vboxuser/res_robo/src/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vboxuser/res_robo/src/restaurant_bot -DCMAKE_INSTALL_PREFIX=/home/vboxuser/res_robo/src/install/restaurant_bot
+[0.261s] -- The C compiler identification is GNU 11.4.0
+[0.451s] -- The CXX compiler identification is GNU 11.4.0
+[0.482s] -- Detecting C compiler ABI info
+[0.578s] -- Detecting C compiler ABI info - done
+[0.582s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.585s] -- Detecting C compile features
+[0.586s] -- Detecting C compile features - done
+[0.592s] -- Detecting CXX compiler ABI info
+[0.687s] -- Detecting CXX compiler ABI info - done
+[0.690s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.691s] -- Detecting CXX compile features
+[0.691s] -- Detecting CXX compile features - done
+[0.702s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.850s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.081s] -- Configuring done
+[1.086s] -- Generating done
+[1.086s] -- Build files have been written to: /home/vboxuser/res_robo/src/build/restaurant_bot
+[1.091s] Invoked command in '/home/vboxuser/res_robo/src/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vboxuser/res_robo/src/restaurant_bot -DCMAKE_INSTALL_PREFIX=/home/vboxuser/res_robo/src/install/restaurant_bot
+[1.092s] Invoking command in '/home/vboxuser/res_robo/src/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/res_robo/src/build/restaurant_bot -- -j4 -l4
+[1.128s] Invoked command in '/home/vboxuser/res_robo/src/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/res_robo/src/build/restaurant_bot -- -j4 -l4
+[1.137s] Invoking command in '/home/vboxuser/res_robo/src/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/res_robo/src/build/restaurant_bot
+[1.146s] -- Install configuration: ""
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//urdf
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//urdf/restaurant_bot.urdf.xacro
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//urdf/restaurant_bot.gazebo.xacro
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//config
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//config/controllers.yaml
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//launch
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//launch/gazebo.launch.py
+[1.146s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot//launch/restaurant_world.launch.py
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/worlds
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/worlds/restaurant.world
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/kitchen
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/kitchen/model.config
+[1.147s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/kitchen/model.sdf
+[1.149s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_chair
+[1.149s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_chair/model.config
+[1.150s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_chair/model.sdf
+[1.151s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_table
+[1.151s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_table/model.config
+[1.151s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/models/restaurant_table/model.sdf
+[1.151s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/launch
+[1.151s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/launch/gazebo.launch.py
+[1.151s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/launch/restaurant_world.launch.py
+[1.151s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/urdf
+[1.152s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/urdf/restaurant_bot.urdf.xacro
+[1.152s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/urdf/restaurant_bot.gazebo.xacro
+[1.152s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/config
+[1.152s] -- Up-to-date: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/config/controllers.yaml
+[1.152s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/ament_index/resource_index/package_run_dependencies/restaurant_bot
+[1.152s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/ament_index/resource_index/parent_prefix_path/restaurant_bot
+[1.152s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/environment/ament_prefix_path.sh
+[1.153s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/environment/ament_prefix_path.dsv
+[1.153s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/environment/path.sh
+[1.153s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/environment/path.dsv
+[1.153s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/local_setup.bash
+[1.153s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/local_setup.sh
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/local_setup.zsh
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/local_setup.dsv
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/package.dsv
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/ament_index/resource_index/packages/restaurant_bot
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/cmake/restaurant_botConfig.cmake
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/cmake/restaurant_botConfig-version.cmake
+[1.154s] -- Installing: /home/vboxuser/res_robo/src/install/restaurant_bot/share/restaurant_bot/package.xml
+[1.158s] Invoked command in '/home/vboxuser/res_robo/src/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/res_robo/src/build/restaurant_bot

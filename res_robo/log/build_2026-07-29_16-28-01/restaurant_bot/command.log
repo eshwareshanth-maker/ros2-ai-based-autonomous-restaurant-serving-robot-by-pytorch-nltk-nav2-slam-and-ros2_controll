@@ -1,0 +1,6 @@
+Invoking command in '/home/vboxuser/res_robo/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vboxuser/res_robo/src/restaurant_bot -DCMAKE_INSTALL_PREFIX=/home/vboxuser/res_robo/install/restaurant_bot
+Invoked command in '/home/vboxuser/res_robo/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vboxuser/res_robo/src/restaurant_bot -DCMAKE_INSTALL_PREFIX=/home/vboxuser/res_robo/install/restaurant_bot
+Invoking command in '/home/vboxuser/res_robo/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/res_robo/build/restaurant_bot -- -j4 -l4
+Invoked command in '/home/vboxuser/res_robo/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/res_robo/build/restaurant_bot -- -j4 -l4
+Invoking command in '/home/vboxuser/res_robo/build/restaurant_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/res_robo/build/restaurant_bot
+Invoked command in '/home/vboxuser/res_robo/build/restaurant_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/res_robo/build/restaurant_bot
